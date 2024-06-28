@@ -8,6 +8,7 @@ import  Signin  from './pages/Login'
 import ForTimer from './pages/ForTimer'
 import Imediate from './pages/Imediate'
 import SendEmail from './pages/SendEmail'
+import Strting from './pages/Strting'
 function App() {
   
 
@@ -19,6 +20,7 @@ function App() {
     </ReactFlowProvider> */}
     <BrowserRouter>
         <Routes>
+        <Route path="/" element={<Strting/>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/sendEmail" element={<SendEmail/>} />
