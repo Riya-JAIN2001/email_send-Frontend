@@ -9,7 +9,7 @@ const Imediate = () => {
     const buttonHandler=async(e)=>{
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:8000/api/emails/sendemail", {
+            const res = await axios.post("https://backendsalesblink.onrender.com/api/emails/sendemail", {
               to: to,
               subject: subject,
               text: body,

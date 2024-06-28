@@ -67,7 +67,7 @@ export const AddNodeOnEdgeDrop = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/api/emails/sendemail", {
+      const res = await axios.post("https://backendsalesblink.onrender.com/api/emails/sendemail", {
         to: newNodeData.To,
         subject: newNodeData.Subject,
         text: newNodeData.body,

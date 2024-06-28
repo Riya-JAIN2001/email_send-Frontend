@@ -16,7 +16,7 @@ function Auth ({type})  {
     async function buttonHandler(){
         try{
            
-            const res= await axios.post(`http://localhost:8000/api/users/${type}`,postInputs);
+            const res= await axios.post(`https://backendsalesblink.onrender.com/api/users/${type}`,postInputs);
             const jwt=res.data.token
             
             localStorage.setItem("token", jwt)
